@@ -10,17 +10,3 @@ const copyFile = () => {
 }
 copyFile()
 
-
-var fss = require("fs-extra");
- 
-var source = 'dir1'
-var destination = 'dir2'
- 
-// copy source folder to destination
-fss.copy(source, destination, function (err) {
-    if (err){
-        console.log('An error occured while copying the folder.')
-        return console.error(err)
-    }
-    console.log('Copy completed!')
-});
